@@ -1,0 +1,34 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Virtual env
+.venv/
+.env/
+.conda/
+*.egg-info/
+
+# Build & IDE
+build/
+dist/
+*.log
+.vscode/
+.idea/
+
+# Data & models (tùy bạn giữ thư mục nào)
+data/
+datasets/
+models/
+checkpoints/
+saved_model*/
+*.h5
+*.hdf5
+*.pb
+*.tflite
+*.onnx
+
+# OS
+.DS_Store
+Thumbs.db
