@@ -1,0 +1,8 @@
+0 Tra Dr.Thanh
+1 C2 tra vai
+2 Nuoc gao wojing
+3 C2 oi hong chanh day
+4 Aquafina
+5 C2 tra chanh
+6 C2 dau anh dao
+7 TH true tee tra xanh
