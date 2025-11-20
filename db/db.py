@@ -53,9 +53,8 @@ def connect(db_path: str | None = None) -> sqlite3.Connection:
     """Mở kết nối SQLite (1 process), bật WAL + foreign_keys, row_factory=Row."""
     path = db_path or os.getenv("DB_PATH", "data/app.db")
     Path(path).parent.mkdir(parents=True, exist_ok=True)
-    con = sqlite3.connect(path, check_same_thread=False)
+    con = sqlite3.connect(path, check_same_thread=False, timeout=15.0)
     con.row_factory = sqlite3.Row
-    # đảm bảo PRAGMA có hiệu lực cả khi schema đã tạo
     con.execute("PRAGMA journal_mode=WAL;")
     con.execute("PRAGMA foreign_keys=ON;")
     return con
